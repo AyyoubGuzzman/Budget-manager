@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+body{
+    background: linear-gradient(90deg, rgb(200, 228, 252), rgb(158, 190, 255));
+}
+
+.warpper{
+    font-size: 16Px;
+    width: 83%;
+    max-width: 43,753m;
+    margin: 1em auto;
+}
+
+.container{
+    width: 100%;
+    
+}
+
+.sub-container{
+    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+
+}
+@media screen and (max-width : 700px) {
+    .sub-container{
+        grid-template-columns: 1fr ;
+        gap: 1em;
+    }
+    .warpper{
+        width: 95%;
+    }
+}
+@media screen and (min-width : 1200px) {
+    .warpper{
+        width: 1000px;
+    
+    }
+}
+
+.output-container{
+    display: flex;
+    justify-content: space-between;
+}
+.warpper h2 {
+    color: #363D55;
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+
+.container input{
+    background-color: #eef3f8;
+    display: block;
+    width: 100%;
+    padding: 0.8em 0.9em;
+    border: none;
+    margin-top: 0.4em;
+    color: #363D55;
+    font-weight: 400;
+    outline: none;
+    border-radius: 4px;
+}
+button{
+    width: 100%;
+    margin-top: 0.5em;
+    padding: 0.8em;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #2ccaff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    
+
+}
+button:hover{
+    background-color: #14aff7;
+    
+}
+
+.container input:focus{
+    border: 1px solid #2ccaff;
+    outline: none;
+}
+
+
+.budget, .expenses{
+    background-color: white;
+    padding: 1.6em 0.9em;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgb(28, 0, 80, 0.08);
+}
+.output-container{
+    background-color: #2ccaff;
+    color: rgb(248, 248, 248);
+    text-align: center;
+    padding: 0.6em 1.5em;
+    margin-top: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgb(28, 0, 80, 0.08);
+    font-size: 20px;
+
+}
+.output-container p{
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 0.3em;
+}
+.output-container span{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.list{
+    background-color: azure;
+    margin-top:1em;
+    padding: 1.3em 0.9em;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgb(28, 0, 80, 0.08);
+    font-size: 20px;
+}
+.list-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background-color: azure;
+    margin-top:0.4em;
+    padding: 1em 0.9em;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgb(28, 0, 80, 0.08);
+}
+.list-container p{
+text-align: right;
+}
+
+p svg {
+    color: #ff2c2c;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+#msgb, #msge{
+    color: #ff2c2c;
+    font-weight: 500;
+}
